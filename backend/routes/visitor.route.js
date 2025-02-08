@@ -1,12 +1,12 @@
-// import express from 'experess'
-// import { getAllCategories } from '../controllers/visitor.controller';
+import express from 'express'
+import { getTopPostsByCategory } from '../controllers/visitor.controller';
 
 
-// const router = express.Router();
-// router.get('/category/all',getAllCategories)
-// router.get('/category/list',)
-// router.get('/category/:categoryName/all',)
-// router.get('/category/:searchTerm',)
-// router.get('/post/:postId',)
+const router = express.Router();
+router.get('/category/all',getTopPostsByCategory)
+router.get('/category/list',)
+router.get('/category/:categoryName/all',)
+router.get('/category/:searchTerm',)
+router.get('/post/:postId',)
 
-// export default router;
+export default router;
